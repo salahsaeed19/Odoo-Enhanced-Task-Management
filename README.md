@@ -1,6 +1,6 @@
 # Odoo Enhanced Task Management Solution - Controller
 
-                                ![mvc](https://github.com/salahsaeed19/Odoo-Enhanced-Task-Management/assets/80893300/61762c73-6aa7-4ed3-bd07-bb7a5d8df191)
+![mvc](https://github.com/salahsaeed19/Odoo-Enhanced-Task-Management/assets/80893300/61762c73-6aa7-4ed3-bd07-bb7a5d8df191)
 
 
 ### The controller is a crucial component of the custom Odoo module "Odoo Enhanced Task Management." It plays a pivotal role in managing the interactions between the user interface, the database, and the Odoo model. The controller is responsible for handling HTTP requests from users, processing the data, and returning the appropriate responses.
