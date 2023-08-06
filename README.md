@@ -1,11 +1,12 @@
 # Odoo Enhanced Task Management Solution - Controller
 
-![mvc](https://github.com/salahsaeed19/Odoo-Enhanced-Task-Management/assets/80893300/61762c73-6aa7-4ed3-bd07-bb7a5d8df191)
+                                ![mvc](https://github.com/salahsaeed19/Odoo-Enhanced-Task-Management/assets/80893300/61762c73-6aa7-4ed3-bd07-bb7a5d8df191)
 
 
 ### The controller is a crucial component of the custom Odoo module "Odoo Enhanced Task Management." It plays a pivotal role in managing the interactions between the user interface, the database, and the Odoo model. The controller is responsible for handling HTTP requests from users, processing the data, and returning the appropriate responses.
 
 #### Key Features of the Controller:
+
 1. URL Mapping: The controller maps specific URLs to corresponding methods, determining how Odoo will handle incoming HTTP requests. For example, the controller may map the URL "/todo/task/<int:record_id>/edit" to the method `edit_task` for task editing functionality.
 
 2. HTTP Methods Handling: The controller supports different HTTP methods, such as GET and POST, to handle various types of requests. For example, when a user wants to edit a task, a GET request is used to display the edit form, while a POST request is used to save the updated task data.
