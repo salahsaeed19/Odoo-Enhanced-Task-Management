@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="task_template_id">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container">
+                    <t t-foreach="tasks" t-as="task">
+                        <ul>
+                            <li>
+                                <t t-esc="task.name"/>
+                            </li>
+                        </ul>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

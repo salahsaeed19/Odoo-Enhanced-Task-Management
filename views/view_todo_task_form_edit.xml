@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="view_todo_task_form_edit">
+        <form string="Edit Task" edit="true" t-attf-action="/" >
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="is_completed"/>
+                </group>
+                <footer>
+                    <button string="Save" type="object" class="btn-primary"/>
+                    or
+                    <a type="object" t-if="not task.id" t-attf-href="/todo/tasks">Cancel</a>
+                    <a type="object" t-if="task.id" t-attf-href="/todo/task/#{task.id}">Cancel</a>
+                </footer>
+            </sheet>
+        </form>
+    </template>
+</odoo>

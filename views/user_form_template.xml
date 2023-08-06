@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <template id="user_form_template">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container" style="margin-top:25px;">
+                    <form class="o_mark_required" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <br></br>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">User Name:</label>
+                            <br/>
+                            <div class="col-md-4">
+                                <input type="text" name="name" class="form-control"/>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">User Email:</label>
+                            <br/>
+                            <div class="col-md-4">
+                                <input type="email" name="login" class="form-control"/>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Cover Image:</label>
+                            <br/>
+                            <div class="col-md-4">
+                                <input type="file" name="image_1920" class="form-control"/>
+                            </div>
+                        </div>
+                        <br></br>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-4">
+                                <button type="submit" class="btn btn-primary">Create User</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

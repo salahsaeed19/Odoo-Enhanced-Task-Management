@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Your other views here -->
+
+    <data>
+        <!-- Include the 'todo_task_edit.xml' template -->
+        <template id="assets_backend" name="todo assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/your_module_name/static/src/js/todo_script.js"></script>
+            </xpath>
+        </template>
+
+        <!-- Add the new view -->
+        <record id="view_todo_task_form_edit" model="ir.ui.view">
+            <field name="name">todo.task.form.edit</field>
+            <field name="model">todo.task</field>
+            <field name="arch" type="xml">
+                <template inherit_id="view_todo_task_form_edit" mode="primary">
+                    <xpath expr="//button[@class='btn-primary']" position="after">
+                        <button string="Delete" type="object" class="btn-danger" confirm="Are you sure you want to delete this task?" 
+                        t-if="task.id" t-attf-href="/todo/task/#{task.id}/delete"/>
+                    </xpath>
+                </template>
+            </field>
+        </record>
+
+        <!-- Your other records here -->
+    </data>
+</odoo>

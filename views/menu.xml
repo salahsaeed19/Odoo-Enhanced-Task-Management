@@ -1,0 +1,7 @@
+<odoo>
+    <!-- Existing Views -->
+
+    <menuitem id="menu_todo_tasks" name="To-Do Tasks" sequence="10" web_icon="todotask,static/done.png" />
+    <menuitem id="menu_todo_tasks_list" name="Task List" parent="menu_todo_tasks" action="action_todo_task" sequence="10"/>
+
+</odoo>
